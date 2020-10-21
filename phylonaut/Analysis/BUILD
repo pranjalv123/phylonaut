@@ -5,7 +5,8 @@ cc_library(
     hdrs = ["Analysis.hpp", 
             "ConsensusTreeAnalysis.hpp",
             "CountTreesAnalysis.hpp",
-            "SingleTreeAnalysis.hpp"
+            "SingleTreeAnalysis.hpp",
+            "ScoreAnalysis.hpp"
             ],
     deps = [":ConsensusTreeAnalysis", 
             ":CountTreesAnalysis",
