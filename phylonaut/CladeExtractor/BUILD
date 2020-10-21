@@ -2,7 +2,7 @@ package(default_visibility = ["//visibility:public"])
 
 cc_library(
     name = "CladeExtractor",
-    hdrs = ["AstralCladeExtractor.hpp",
+    hdrs = ["ASTRALCladeExtractor.hpp",
             "GLOBExtractor.hpp",
             "DefaultTaxonSetExtractor.hpp",
             "SimpleCladeExtractor.hpp"],
