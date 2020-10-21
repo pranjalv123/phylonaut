@@ -28,7 +28,7 @@ cc_library(
     hdrs = ["ASTRALCladeExtractor.hpp"],
     srcs = ["CladeExtractor.hpp",
             "ASTRALCladeExtractor.cpp",
-            "dirent.hpp"],
+            "dirent.h"],
     deps = [
         ":whereami", 
         "@phylokit",
