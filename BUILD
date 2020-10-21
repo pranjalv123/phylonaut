@@ -18,3 +18,18 @@ config_setting(
         "@platforms//os:osx",
     ],
 )
+
+cc_library(
+    name = "phylonaut"
+    deps = [
+        "//phylonaut/Analysis:Analysis",
+        "//phylonaut/CladeExtractor:CladeExtractor",
+        "//phylonaut/TripartitionScorer:TripartitionScorer",
+        "//phylonaut:wASTRAL",
+        "//phylonaut:Config"
+    ]
+    hdrs = glob([
+        "//phylonaut/**:*.hpp",
+    ])
+
+)
