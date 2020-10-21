@@ -20,7 +20,7 @@ config_setting(
 )
 
 cc_library(
-    name = "phylonaut"
+    name = "phylonaut",
     deps = [
         "//phylonaut/Analysis:Analysis",
         "//phylonaut/CladeExtractor:CladeExtractor",
