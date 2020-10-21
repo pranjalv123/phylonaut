@@ -1,6 +1,9 @@
 #ifndef PHYLONAUT_CONFIG_HPP__
 #define PHYLONAUT_CONFIG_HPP__
 
+#include <vector>
+#include <string>
+
 class wASTRAL_;
 class Analysis;
 class CladeExtractor;
@@ -12,17 +15,17 @@ struct Config {
   TripartitionScorer*  scorer;
   TaxonSetExtractor* taxon_extractor;
 
-  vector<CladeExtractor*> extractors;  
+  std::vector<CladeExtractor*> extractors;  
   
-  vector<Analysis*>    analyses;
+  std::vector<Analysis*>    analyses;
   
   bool matrix;      //save the entire |X|^2 matrix
   
-  string profile;     
+  std::string profile;     
 
   template<class InputIterator>
   void add_clades(InputIterator first, InputIterator last);
-  vector<Clade>& get_clades();
+  std::vector<Clade>& get_clades();
 
   wASTRAL_* wASTRAL;
 };
