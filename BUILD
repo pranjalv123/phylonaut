@@ -29,7 +29,7 @@ cc_library(
         "//phylonaut:Config"
     ],
     hdrs = glob([
-        "//phylonaut/**:*.hpp",
+        "phylonaut/**:*.hpp",
     ])
     visibility = ["//visibility:public"],
 )
