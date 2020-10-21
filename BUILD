@@ -27,7 +27,7 @@ cc_library(
         "//phylonaut/TripartitionScorer:TripartitionScorer",
         "//phylonaut:wASTRAL",
         "//phylonaut:Config"
-    ]
+    ],
     hdrs = glob([
         "//phylonaut/**:*.hpp",
     ])
